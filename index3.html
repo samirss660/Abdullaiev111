@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Parent-child</title>
+</head>
+<body>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        .parent {
+            width: 80%;
+            background: yellow;
+            margin-left: 10%;
+            margin-top: 50px;
+            position: relative;
+            padding: 20px;
+            min-height: 300px;
+        }
+        .child {
+            width: 50%;
+            height: 200px;
+            background: lightgreen;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            left: auto;
+            top: auto;
+            z-index: 9000;
+            border: 1px solid #000;
+        }
+    </style>
+    
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="child">
+             <p>Lorem ipsum</p>
+        </div>
+    </div>
+</body>
+</html>
